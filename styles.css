@@ -1,0 +1,100 @@
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #ffe4e1; /* Rosa claro */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 24px;
+    color: #C71585; /* Magenta rosado */
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff0f5; /* Fundo em rosa claro */
+    color: #800000; /* Marrom avermelhado */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do vídeo */
+main video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 2px solid #C71585;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-bottom: 400px; /* Espaçamento para aparecer o texto depois */
+}
+
+/* Texto romântico */
+footer p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: #ffe4e1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #800000;
+    transition: opacity 0.5s ease;
+}
+
+/* Botões */
+#aceito, #nao {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+/* Estilo do botão Aceito */
+#aceito {
+    background-color: #FF69B4;
+    color: white;
+}
+
+/* Estilo do botão Não */
+#nao {
+    background-color: #CD5C5C;
+    color: white;
+    position: relative;
+}
+
+/* Efeito de movimento no botão Não */
+#nao:hover {
+    transform: translate(calc(-50px + 100px * random()), calc(-50px + 100px * random()));
+}
+
+/* Media query para mobile */
+@media (max-width: 600px) {
+    header h2 {
+        font-size: 20px;
+    }
+
+    main video {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    #aceito, #nao {
+        font-size: 16px;
+    }
+}
